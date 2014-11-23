@@ -17,9 +17,6 @@
 			<nav>
 				<ul>
 					<li>menu-item</li>
-					<li>menu-item</li>
-					<li>menu-item</li>
-					<li>menu-item</li>
 				</ul>
 			</nav>
 		</div>
