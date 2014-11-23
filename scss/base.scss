@@ -1,0 +1,57 @@
+//
+//BASE
+//
+
+@include edit();
+
+* {
+	@include box-sizing(border-box);
+}
+
+body {
+	@extend %main-font;
+	padding-top: 30px;
+	position: relative;
+}
+
+main > section,
+header > div,
+footer > div {
+	@include center(1024px);
+}
+
+header {
+	h1 {
+		@include col(1/3);
+	}
+	nav {
+		@include col(2/3);
+		ul {
+			li {
+				@include col(1/3);
+			}
+		}
+	}
+}
+
+div {	
+	&.fixed {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		height: 30px;
+		> div {
+			@include center(1024px);
+		}
+	}
+}
+
+section {
+	article {
+		@include col(2/3);
+	}
+	aside {
+		@include col(1/3);
+	}
+}

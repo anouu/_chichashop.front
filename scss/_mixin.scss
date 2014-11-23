@@ -1,0 +1,129 @@
+//
+//MIXIN
+//
+
+//VARS
+$baseImg : '../img/';
+$baseFont : '../font/';
+
+//INLINE-BLOCK
+@mixin inline-block($position: middle) {
+	display: inline-block;
+	*display : inline;
+	*zoom : 1;
+	vertical-align: $position;
+}
+
+//BORDER RADIUS
+@mixin border-radius($radius: 9999px, $border: 1px, $color: $white) {
+	position: relative;
+	border: $border solid $color;
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	-webkit-transform: translate(0,0,0);
+}
+
+//BOX-SIZING
+@mixin box-sizing($type: content-box) {
+	-webkit-box-sizing: $type;
+	-moz-box-sizing: $type;
+	-ms-box-sizing: $type;
+	-o-box-sizing: $type;
+	box-sizing: $type;
+}
+
+//BOX-SHADOW
+@mixin box-shadow($x:-1px, $blur: 1px, $size: 1px, $color: $white){
+	-webkit-box-shadow: $x $blur $size $color;
+	-moz-box-shadow: $x $blur $size $color;
+	-ms-box-shadow: $x $blur $size $color;
+	-o-box-shadow: $x $blur $size $color;
+	box-shadow: $x $blur $size $color;
+}
+
+//TRANSITION
+@mixin transition($selector: all, $ease: ease, $duration: 0.3s, $delay:0s) {
+	-webkit-transition: $selector $ease $duration $delay;
+	-moz-transition: $selector $ease $duration $delay;
+	-ms-transition: $selector $ease $duration $delay;
+	-o-transition: $selector $ease $duration $delay;
+	transition: $selector $ease $duration $delay;
+}
+
+//SCALE
+@mixin transi-scale($size: 1, $ease: ease-out, $duration: 500ms) {
+
+	//transform
+	-webkit-transform: scale($size);
+	-moz-transform: scale($size);
+	-ms-transform: scale($size);
+	-o-transform: scale($size);
+	transform: scale($size);
+
+	//transition-timing-function
+	-webkit-transition-timing-function: $ease;
+	-moz-transition-timing-function: $ease;
+	-ms-transition-timing-function: $ease;
+	-o-transition-timing-function: $ease;
+	transition-timing-function: $ease;
+
+	//transition-duration
+	-webkit-transition-duration: $duration;
+	-moz-transition-duration: $duration;
+	-ms-transition-duration: $duration;
+	-o-transition-duration: $duration;
+	transition-duration: $duration;
+}
+
+
+//ROTATION
+@mixin rotate($deg) {
+	-webkit-transform: rotate($deg);
+	-moz-transform: rotate($deg);
+	-o-transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	transform: rotate($deg);
+	zoom: 1;
+}
+
+
+//CIRCLE
+@mixin circle($radius, $color) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+	width: $radius*2;
+	height: $radius*2;
+	background: $color;
+	behavior: url('../js/dist/PIE.htc');
+}
+
+//FONT-SIZE
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
+
+// GREYSCALE
+@mixin filter($filter-type,$filter-amount) { 
+
+	// grayscale      ex: filter: grayscale(100%);
+	// sepia          ex: filter: sepia(100%);
+	// saturate       ex: filter: saturate(0%);
+	// hue-rotate     ex: filter: hue-rotate(45deg);
+	// invert         ex: filter: invert(100%);
+	// brightness     ex: filter: brightness(15%);
+	// contrast       ex: filter: contrast(200%);
+	// blur           ex: filter: blur(2px);
+
+	-webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+	-moz-filter: $filter-type+unquote('(#{$filter-amount})');
+	-ms-filter: $filter-type+unquote('(#{$filter-amount})');
+	-o-filter: $filter-type+unquote('(#{$filter-amount})');
+	filter: $filter-type+unquote('(#{$filter-amount})');
+}

@@ -1,0 +1,19 @@
+//
+//HEADER
+//
+
+header {
+	h1 {
+		img {
+			@include inline-block;
+			max-width: 100%;
+		}
+	}
+}
+.fixed {
+	text-align: right;
+	p {
+		@include inline-block;
+		line-height: 30px;
+	}
+}
