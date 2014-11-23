@@ -33,12 +33,7 @@ header {
 		}
 	}
 }
-main {
-	h1 {
-		font-family: 'Montserrat';
-		@include font-size(2.4);
-	}
-}
+
 div {	
 	&.fixed {
 		position: fixed;
