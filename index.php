@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Chicha Shop</title>
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/chichashop.css">
 	<script src="js/modernizr.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="//localhost:35729/livereload.js"></script>
 </head>
@@ -17,21 +17,30 @@
 			<nav>
 				<ul>
 					<li>menu-item</li>
+					<li>menu-item</li>
+					<li>menu-item</li>
+					<li>menu-item</li>
+					<li>menu-item</li>
+					<li>menu-item</li>
 				</ul>
+				<form action="">
+					<fieldset>
+						<label for="">
+							<input type="search">
+							<input type="submit">
+						</label>
+					</fieldset>
+				</form>
 			</nav>
 		</div>
 	</header>
 	<div class="fixed">
 		<div>	
 			<p>Mon Compte</p>
-			<p>Panier</p>
-		</div>
-		<div class="basket">
-			
 		</div>
 	</div>
 	<main>
-		
+
 	</main>
 	<footer>
 		<div>

@@ -25,7 +25,7 @@ gulp.task('sass', function() {
         this.emit('end');
     };
 
-    return gulp.src('scss/main.scss')
+    return gulp.src('scss/chichashop.scss')
         .pipe(plumber({errorHandler: onError}))
         .pipe(sass())
         .pipe(gulp.dest('css'))

@@ -22,14 +22,20 @@ footer > div {
 
 header {
 	h1 {
-		@include col(1/3);
+		width: 33.3333%;
 	}
 	nav {
-		@include col(2/3);
+		width: 100%;
+		@include cf();
 		ul {
+			@include cf();
+			@include col(6/9);
 			li {
-				@include col(1/3);
+				float: left;
 			}
+		}
+		form {
+			@include col(3/9);
 		}
 	}
 }

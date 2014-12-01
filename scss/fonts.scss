@@ -3,14 +3,29 @@
 //
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800,400);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:300,800,400);
 
-%main-font{
+%main-font {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 }
 %light {
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
 %xbold {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+}
+%title-font {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+%title-light {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+%title-bold {
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 800;
 }
